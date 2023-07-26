@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let num1 = prompt(`Введите первое любое число`);
+        let num2 = prompt(`Введите второе любое число`);
+
+        console.log(num1 <= 1);
+        console.log(num2 >= 3);
+
+
+        let test = true;
+        console.log((test === true) ? '+++' : '---');
+
+
+        let day = 3;
+        if (day >= 1 && day <= 10) {
+            console.log(`Число в первой декаде месяца`);
+        }
+        else if (day >= 21 && day <= 31) {
+            console.log(`Число в третьей декаде месяца`);
+        } else {
+            console.log(`Число во второй декаде месяца`);
+        }
+
+
+        let n = prompt(`Введите любое число`);
+        if (n % 1 === 0 && n >= 0) {
+            console.log(`В числе ${n} количество тысяч: ${Math.floor(n / 1000 % 100)}, сотен: ${Math.floor(n / 100 % 10)}, десятков: ${Math.floor(n / 10 % 10)}, единиц: ${n % 10}`);
+        }
+        else {
+            console.log(`Некорректно введено число`);
+        }
+
+    </script>
+</body>
+
+</html>
